@@ -1,0 +1,32 @@
+.layoutContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.pageWrapper {
+  display: flex;
+  justify-content: center;
+  padding: 1.25rem 1rem;
+
+  @media (min-width: 640px) {
+    padding: 1.25rem 2rem;
+  }
+
+  @media (min-width: 768px) {
+    padding: 1.25rem 5rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 1.25rem 10rem;
+  }
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: 1168px;
+  width: max-content;
+  width: 100%;
+}

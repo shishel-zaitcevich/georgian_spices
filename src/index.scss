@@ -1,0 +1,47 @@
+:root {
+  --primary: #f92f06;
+  --background-light: #f8f6f5;
+  --background-dark: #23130f;
+  --surface-dark: #351d18;
+  --accent-text: #cc998e;
+  --border-dark: #4a2821;
+}
+
+/* === Базовые стили === */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+  background-color: var(--background-dark);
+  color: white;
+  -webkit-font-smoothing: antialiased;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+  font-size: 20px;
+}
+
+/* === Стили скролла === */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-dark);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
