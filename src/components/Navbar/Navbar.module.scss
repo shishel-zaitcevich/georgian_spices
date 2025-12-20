@@ -4,19 +4,19 @@
   justify-content: space-between;
   white-space: nowrap;
   border-bottom: 1px solid var(--border-dark);
-  padding: 0.75rem 1rem;
+  // padding: 0.75rem 1rem;
   background-color: var(--background-dark);
   position: sticky;
   top: 0;
   z-index: 40;
 
-  @media (min-width: 640px) {
-    padding: 0.75rem 1.5rem;
-  }
+  // @media (min-width: 640px) {
+  //   padding: 0.75rem 1.5rem;
+  // }
 
-  @media (min-width: 768px) {
-    padding: 0.75rem 2.5rem;
-  }
+  // @media (min-width: 768px) {
+  //   padding: 0.75rem 2.5rem;
+  // }
 }
 
 .logo {
@@ -36,8 +36,13 @@
 
 .logoIcon {
   img {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
+
+    @media (max-width: 920px) {
+      width: 70px;
+      height: 70px;
+    }
   }
 }
 
