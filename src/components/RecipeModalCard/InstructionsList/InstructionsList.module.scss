@@ -1,0 +1,46 @@
+.instructions {
+  flex: 1;
+
+  h3 {
+    font-size: 1.25rem;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .step {
+    display: flex;
+    gap: 1rem;
+
+    .num {
+      background: #4a2821;
+      color: white;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+
+    h4 {
+      color: white;
+      font-weight: 500;
+      margin-bottom: 0.25rem;
+    }
+
+    p {
+      color: #cc998e;
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+  }
+}

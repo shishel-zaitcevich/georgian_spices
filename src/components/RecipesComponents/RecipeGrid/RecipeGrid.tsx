@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './RecipeGrid.module.scss';
-import { RECIPES } from '../utils/recipes';
+import { RECIPES } from '../data/recipes';
 import RecipeCard from '../RecipeCard/RecipeCard';
 import Button from '@/shared/Button/Button';
 

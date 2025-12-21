@@ -1,34 +1,10 @@
-// .cta {
-//   text-align: center;
-//   padding: 5rem 2rem;
-//   background: #23130f;
-
-//   h2 {
-//     font-size: 2rem;
-//     font-weight: 800;
-//   }
-
-//   p {
-//     color: #cc998e;
-//     margin-top: 1rem;
-//   }
-
-//   .buttons {
-//     margin-top: 2rem;
-//     display: flex;
-//     justify-content: center;
-//     gap: 1rem;
-//   }
-// }
-
 .cta {
   text-align: center;
   padding: 5rem 2rem;
-  // background: #23130f;
   background:
     linear-gradient(rgba(35, 19, 15, 0.5), rgba(35, 19, 15, 0.4)),
     url("/img/spice.jpg") center/cover no-repeat;
-  // margin-bottom: 4rem;
+  border-radius: 0.75rem;
 
   @media (max-width: 768px) {
     padding: 2rem 2rem;
@@ -66,7 +42,7 @@
 
 .contactBox {
   margin-top: 2rem;
-  background: rgba(53, 29, 24, 0.5);
+  background: rgba(53, 29, 24, 0.8);
   border: 1px solid #4a2821;
   border-radius: 0.75rem;
   padding: 1.5rem;

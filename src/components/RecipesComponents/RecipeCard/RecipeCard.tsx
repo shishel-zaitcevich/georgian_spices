@@ -1,11 +1,22 @@
 import React from 'react';
 
 import Button from '@/shared/Button/Button';
-import { Recipe } from '../utils/recipes';
+import { Recipe } from '../data/recipes';
 
 import styles from './RecipeCard.module.scss';
+import { useModal } from '@/context/ModalContext';
+import RecipeModalCard from '@/components/RecipeModalCard/RecipeModalCard';
 
-const RecipeCard: React.FC<{ recipe: Recipe }> = ({ recipe }) => {
+interface RecieCardProps {
+  recipe: Recipe;
+}
+
+const RecipeCard: React.FC<RecieCardProps> = ({ recipe }) => {
+  const { openModal } = useModal();
+
+  const handleCardClick = () => {
+    openModal(<RecipeModalCard />);
+  };
   return (
     <div className={styles.card}>
       <div className={styles.image} style={{ backgroundImage: `url(${recipe.image})` }}>
@@ -22,7 +33,7 @@ const RecipeCard: React.FC<{ recipe: Recipe }> = ({ recipe }) => {
           <p className={styles.desc}>{recipe.description}</p>
         </div>
         <div className={styles.footer}>
-          <Button variant="orange" className={styles.button}>
+          <Button variant="orange" className={styles.button} onClick={handleCardClick}>
             View Recipe
           </Button>
         </div>

@@ -27,7 +27,7 @@ const SpiceCard: React.FC<SpiceCardProps> = ({ spice, onAddToCart }) => {
           onClick={() => onAddToCart?.(spice)}
           disabled={!onAddToCart}
         >
-          Add to Cart
+          Know more
         </button>
       </div>
     </div>
