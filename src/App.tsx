@@ -2,9 +2,12 @@ import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 import styles from './App.module.scss';
-import Footer from './components/Footer/Footer';
-import Navbar from './components/Navbar/Navbar';
-import HomePage from './pages/HomePage';
+import Footer from './widgets/Footer/Footer';
+import Navbar from './widgets/Navbar/Navbar';
+import HomePage from './pages/HomePage/HomePage';
+import AboutPage from './pages/AboutPage/AboutPage';
+import ContactsPage from './pages/ContactsPage/ContactsPage';
+import RecipesPage from './pages/RecipesPage/RecipesPage';
 
 const App: React.FC = () => {
   return (
@@ -16,6 +19,9 @@ const App: React.FC = () => {
 
             <Routes>
               <Route path="/" element={<HomePage />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/contacts" element={<ContactsPage />} />
+              <Route path="/recipes" element={<RecipesPage />} />
             </Routes>
 
             <Footer />

@@ -1,0 +1,43 @@
+.hero {
+  width: 100%;
+  max-width: 1280px;
+  min-height: 480px;
+  border-radius: 0.75rem;
+  margin: 2rem 1rem;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url("https://lh3.googleusercontent.com/aida-public/AB6AXuDsvGvl7XTsmjqa0luRnkL_-5vtJhE-mEE1Jeo7KXflJ6g2zFBjbKEzlJ8_aED4mHXpFxx5cwMRoNdIq6MpKSQeYywiid6qc948JB7Ccv1dx3BzDi2X0c5M3zFKG4YwKqiWIGlsY5IZ40gGk_tVqH_hS52VSgtKYcMBdHYnKrR8WK-Uyam43eCy_X_bD6nSvRJaYiJhsn-lAmcT07ORxqn5iXpJcJidBaZB6o55qjMd8HxN2MPjk8395M5xFjXMYZyXJJwSxup1AFJB");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 1rem;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.textBox {
+  max-width: 720px;
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 1.125rem;
+    color: #ccc;
+    font-weight: 400;
+    margin-top: 1rem;
+    line-height: 1.6;
+  }
+}

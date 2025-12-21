@@ -1,0 +1,40 @@
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+  background:
+    linear-gradient(rgba(35, 19, 15, 0.7), rgba(35, 19, 15, 0.3)),
+    url("https://lh3.googleusercontent.com/aida-public/AB6AXuAwLlvCILCSCcw5cmdST8wPyP-kb4f4EkwiFsgSDXQr_MbyPfkyl99-U3bN1shDlmMzRWEM8eHUVTQL4Z0s-0busUQPpDpAnK_ImnqSSPfMZ0PBd6J54zZ-Vt_Z9YYmJmf_X5fsPiVQ6P8ZWdK2KKm3tO6vfSce4ktP9_wRow57MzwV1qudg2ufalt-mXBYHDaeiiT2OHVjApHgwPpCA5bRhZHjXL51QigXmUjat6GmtNp3oysXYfBdvxT-I2V0KdoZ_ppmHS2nahaO")
+      center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  text-align: center;
+  padding: 2rem;
+}
+
+.text {
+  max-width: 800px;
+  margin: auto;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    color: #ddd;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}

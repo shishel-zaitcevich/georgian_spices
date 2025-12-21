@@ -51,7 +51,7 @@ export default defineConfig({
     },
     preprocessorOptions: {
       scss: {
-        additionalData: `@import "@/styles/variables.scss";\n`, // Только переменные — автоматически в каждый .module.scss
+        // additionalData: `@import "@/styles/variables.scss";\n`, // Только переменные — автоматически в каждый .module.scss
         api: 'modern',
       },
     },

@@ -1,0 +1,70 @@
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  color: white;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  color: #f92f06;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.infoBlock {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+  strong {
+    color: white;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    color: #cc998e;
+    font-size: 0.9rem;
+  }
+}
+
+.spices {
+  h3 {
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    color: #fff;
+    margin-bottom: 0.75rem;
+  }
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chip {
+  background: #4a2821;
+  padding: 0.4rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  transition: 0.2s;
+
+  &:hover {
+    background: #5d3229;
+  }
+}
