@@ -9,7 +9,7 @@ const events = [
 ];
 
 const TimelineSection: React.FC = () => (
-  <section className={styles.timeline}>
+  <section className={styles.timeline} id="story">
     <div className={styles.line}></div>
     {events.map((e) => (
       <div key={e.year} className={styles.event}>

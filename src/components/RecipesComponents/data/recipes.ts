@@ -67,4 +67,33 @@ export const RECIPES: Recipe[] = [
     meta: 'Side Dish • 25 mins',
     rating: '4.5',
   },
+  {
+    id: 7,
+    title: 'Spinach Pkhali',
+    description:
+      'A healthy and colorful appetizer made with spinach, walnuts, vinegar, and Blue Fenugreek.',
+    image:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuD6bXsbBKlL2FPScfnTIOtN1i9eUXBjVRu1LWoYvsxdFsV2fUgjComVZwET7Uj6k73-jTaryxfeoRYATeyJZsmYMCC8NogF1DrBXhLWm-gMOVNBysoj2tyAiOkeBu6dbGl3u_MvSryn2y9TU4qdnpo72oYvm47JTe7cwOntsuJin-_HOPXoMw2nvxFywW-UhXPv2YLwN7c9vJPElqI5u9z-aAlIaPD4kFAIhuAdBi7PmIY5tWOWxw4d5f_14Uc-F8cTwXaFzuZe0p_Q',
+    meta: 'Appetizer • 30 mins',
+    rating: '4.7',
+  },
+  {
+    id: 8,
+    title: 'Lobio Bean Stew',
+    description: 'Rich and flavorful red kidney bean stew served in a clay pot with cornbread.',
+    image:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuAHFSznr51aoIn-IFq2owjvCnkqWNG0_XBOHQXAjRIG7FmfB-f2cVKZR-Nuu0DkYxS4CfAbj0Zf8pTljPhyEy1rLAnHTNKLghCzDvLFff_iRj4ebQVlzwL4u-6pNmXWxUvqB0irc9_O6f9dVZqISVyG63E5X4LXHySN4XSCOoXAuqsbE9h9NTPf9Xhy_d8J0edbeCgf9rAmNqS9BB6hTdLVZ7ROWuJ1eEwmyss-HekiPqU8sLopiKev5weGXkNHzT-RmOAV_j7kraiG',
+    meta: 'Vegan • 50 mins',
+    rating: '4.6',
+  },
+  {
+    id: 9,
+    title: 'Svanetian Grilled Veggies',
+    description:
+      'Simple grilled seasonal vegetables elevated with the unique aroma of Svanetian Salt.',
+    image:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuAZ80G6K-Im2FAXaW487axPfX_R2zoKjt-K2eWaFtA6rVmmfDiLQJLPn0NFW4PTOY9_xIleTPw7LCv64QyaUqQ6tzzO02doZ_9INSB8JpivYWIoGNZg7-xcak9hXvtEpNEz0524J3ZMTzthkyDOCeDh_QHLwtVwTSoPht5iTPOgwuzIU0AtArbi6ZO1ykdnJJrAa6AkYFzKLFOZPm-wmSDpcygmGOe91CV-qOweLM-PCBg7TuUCR2TKgpO5XG85mm-nNRlSh3Fl4KHk',
+    meta: 'Side Dish • 25 mins',
+    rating: '4.5',
+  },
 ];

@@ -2,15 +2,11 @@ import React from 'react';
 
 import styles from './Hero.module.scss';
 
-import HeroButton from './HeroButton';
 import HeroContent from './HeroContent';
 import { IMAGES } from '@/constants/constants';
+import Button from '@/shared/Button/Button';
 
-interface HeroProps {
-  onExplore?: () => void;
-}
-
-const Hero: React.FC<HeroProps> = ({ onExplore }) => {
+const Hero: React.FC = () => {
   return (
     <section className={styles.heroContainer}>
       <div
@@ -20,7 +16,10 @@ const Hero: React.FC<HeroProps> = ({ onExplore }) => {
         }}
       >
         <HeroContent />
-        <HeroButton onClick={onExplore ?? (() => {})} />
+
+        <Button variant="orange">
+          <a href="#popular-spices"> Explore the Collection</a>
+        </Button>
       </div>
     </section>
   );

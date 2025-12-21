@@ -24,6 +24,7 @@
   border-radius: 0.75rem;
   transition: all 0.3s ease;
   border: 1px solid transparent;
+  // backdrop-filter: blur(6px);
 
   &:hover {
     border-color: #f92f06;

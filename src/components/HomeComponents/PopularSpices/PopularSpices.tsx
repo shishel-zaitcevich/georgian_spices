@@ -12,7 +12,7 @@ interface PopularSpicesProps {
 
 const PopularSpices: React.FC<PopularSpicesProps> = ({ onAddToCart }) => {
   return (
-    <section className={styles.popularSpices}>
+    <section className={styles.popularSpices} id="popular-spices">
       <h2 className={styles.title}>Our Most Popular Spices</h2>
 
       <div className={styles.grid}>

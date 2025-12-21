@@ -1,17 +1,27 @@
 import React from 'react';
 import styles from './RecipeHeader.module.scss';
+import { RecipeTag } from '../types/modalRecipeType';
 
-const RecipeHeader: React.FC = () => (
+interface Props {
+  name: string;
+  description: string;
+  tags: RecipeTag[];
+}
+
+const RecipeHeader: React.FC<Props> = ({ name, description, tags }) => (
   <div className={styles.header}>
     <div className={styles.tags}>
-      <span className={styles.primaryTag}>Traditional</span>
-      <span className={styles.secondaryTag}>Meat</span>
+      {tags?.map((t) => (
+        <span
+          key={t.label}
+          className={t.type === 'primary' ? styles.primaryTag : styles.secondaryTag}
+        >
+          {t.label}
+        </span>
+      ))}
     </div>
-    <h1>Khinkali (Georgian Dumplings)</h1>
-    <p>
-      A classic Georgian dumpling dish made with twisted knobs of dough, stuffed with meat and
-      spices. The key to eating them is to slurp the broth inside first!
-    </p>
+    <h1>{name}</h1>
+    <p>{description}</p>
   </div>
 );
 

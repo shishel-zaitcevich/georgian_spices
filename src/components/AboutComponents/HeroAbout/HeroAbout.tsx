@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './HeroAbout.module.scss';
 import Button from '@/shared/Button/Button';
+import { Link } from 'react-router-dom';
 
 const HeroAbout: React.FC = () => (
   <section className={styles.hero}>
@@ -12,8 +13,16 @@ const HeroAbout: React.FC = () => (
           of Kakheti.
         </h2>
         <div className={styles.buttons}>
-          <Button variant="orange">Read Our Story</Button>
-          <Button variant="transparent">View Products</Button>
+          <Button variant="orange">
+            {/* <Link to={'#story'}>Read Our Story</Link> */}
+            <a href="#story">Read Our Story</a>
+          </Button>
+          {/* <a href="#popular-spices" className={styles.heroButton}>
+            Explore the Collection
+          </a> */}
+          <Button variant="transparent" className={styles.buttonAbout}>
+            <Link to={'/'}> View Products</Link>
+          </Button>
         </div>
       </div>
     </div>

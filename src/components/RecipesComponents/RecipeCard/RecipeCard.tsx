@@ -15,8 +15,10 @@ const RecipeCard: React.FC<RecieCardProps> = ({ recipe }) => {
   const { openModal } = useModal();
 
   const handleCardClick = () => {
-    openModal(<RecipeModalCard />);
+    openModal(<RecipeModalCard recipeId={String(recipe?.id)} />);
+    console.log(String(recipe?.id), 'recipeId');
   };
+
   return (
     <div className={styles.card}>
       <div className={styles.image} style={{ backgroundImage: `url(${recipe.image})` }}>

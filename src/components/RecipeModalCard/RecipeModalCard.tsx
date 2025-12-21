@@ -5,18 +5,26 @@ import InstructionsList from './InstructionsList/InstructionsList';
 
 import RecipeHeader from './RecipeHeader/RecipeHeader';
 import RecipeMeta from './RecipeMeta/RecipeMeta';
+import { modalRecipesData } from './data/modalRecipesData';
 
-const RecipeModalCard: React.FC = () => {
+interface Props {
+  recipeId: string;
+}
+
+const RecipeModalCard: React.FC<Props> = ({ recipeId }) => {
+  const recipe = modalRecipesData.find((r: { id: string }) => r.id === recipeId);
+  if (!recipe) return null;
+
   return (
     <div className={styles.modal}>
-      <div className={styles.leftImage} />
+      <div className={styles.leftImage} style={{ backgroundImage: `url("${recipe.image}")` }} />
 
       <div className={styles.content}>
-        <RecipeHeader />
-        <RecipeMeta />
+        <RecipeHeader name={recipe.name} description={recipe.description} tags={recipe.tags} />
+        <RecipeMeta meta={recipe.meta} />
         <div className={styles.recipeBody}>
-          <IngredientsList />
-          <InstructionsList />
+          <IngredientsList ingredients={recipe.ingredients} />
+          <InstructionsList steps={recipe.instructions} />
         </div>
       </div>
     </div>
