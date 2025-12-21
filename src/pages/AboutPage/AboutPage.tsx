@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 
 import styles from './AboutPage.module.scss';
 import CTASection from '@/widgets/CTASection/CTASection';
@@ -19,4 +19,4 @@ const AboutPage: React.FC = () => (
   </div>
 );
 
-export default AboutPage;
+export default memo(AboutPage);

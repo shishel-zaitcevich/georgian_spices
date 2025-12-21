@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 
 import styles from './RecipesPage.module.scss';
 import HeroSection from '@/components/RecipesComponents/HeroSection/HeroSection';
@@ -13,4 +13,4 @@ const RecipesPage: React.FC = () => {
   );
 };
 
-export default RecipesPage;
+export default memo(RecipesPage);

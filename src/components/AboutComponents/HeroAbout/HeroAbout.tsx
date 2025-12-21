@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import styles from './HeroAbout.module.scss';
 import Button from '@/shared/Button/Button';
 import { Link } from 'react-router-dom';
@@ -29,4 +29,4 @@ const HeroAbout: React.FC = () => (
   </section>
 );
 
-export default HeroAbout;
+export default memo(HeroAbout);
