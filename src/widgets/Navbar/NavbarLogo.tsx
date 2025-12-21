@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Navbar.module.scss';
 
@@ -13,4 +13,4 @@ const NavbarLogo: React.FC = () => (
   </div>
 );
 
-export default NavbarLogo;
+export default memo(NavbarLogo);

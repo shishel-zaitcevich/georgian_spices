@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 
 import styles from './HomePage.module.scss';
 import Hero from '@/components/HomeComponents/Hero/Hero';
@@ -17,4 +17,4 @@ const HomePage: React.FC = () => {
   );
 };
 
-export default HomePage;
+export default memo(HomePage);

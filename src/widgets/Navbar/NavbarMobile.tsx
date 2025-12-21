@@ -25,12 +25,10 @@ const NavbarMobile: React.FC = () => {
 
   return (
     <>
-      {/* Кнопка бургера */}
       <button className={styles.burgerButton} onClick={toggleMenu} aria-label="Открыть меню">
         <span className="material-symbols-outlined">{isOpen ? 'close' : 'menu'}</span>
       </button>
 
-      {/* Оверлей с меню */}
       {isOpen && (
         <div className={styles.overlay} onClick={toggleMenu}>
           <nav className={styles.menu} onClick={(e) => e.stopPropagation()}>
@@ -47,7 +45,7 @@ const NavbarMobile: React.FC = () => {
                   <NavLink
                     to={link.path}
                     className={({ isActive }) => (isActive ? styles.activeLink : styles.link)}
-                    onClick={toggleMenu} // закрываем меню после клика
+                    onClick={toggleMenu}
                   >
                     {link.name}
                   </NavLink>

@@ -38,15 +38,17 @@
 .menu {
   position: fixed;
   top: 0;
-  right: 0;
+  right: 0; /* приклеено к правому краю */
   width: 90%;
+  //   max-width: 320px; /* ограничение ширины для больших экранов */
   height: 100%;
   background: var(--background-dark);
-  border-right: 1px solid var(--border-dark);
-  box-shadow: 8px 0 24px rgba(0, 0, 0, 0.4);
+  border-left: 1px solid var(--border-dark); /* бордер слева */
+  box-shadow: -8px 0 24px rgba(0, 0, 0, 0.4); /* тень слева */
   display: flex;
   flex-direction: column;
-  animation: slideIn 0.4s ease-out;
+  transform: translateX(-0%); /* стартовая позиция — за правым краем */
+  transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .header {
@@ -85,9 +87,8 @@
   display: block;
   padding: 1rem 1.5rem;
   color: var(--accent-text);
-  font-size: 1.125rem;
   font-weight: 500;
-  text-decoration: none;
+  text-decoration: none !important;
   transition: all 0.3s ease;
 
   &:hover {
@@ -98,15 +99,13 @@
 }
 
 .activeLink {
-  background: var(--primary);
   color: white;
-  font-weight: 700;
-  padding-left: 2rem;
-  padding-right: 2rem;
+
+  padding: 1.5rem 2rem;
   border-radius: 4px;
+  text-decoration: none !important;
 }
 
-// Анимации
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -118,7 +117,7 @@
 
 @keyframes slideIn {
   from {
-    transform: translateX(-100%);
+    transform: translateX(100%);
   }
   to {
     transform: translateX(0);
