@@ -1,0 +1,58 @@
+.story {
+  padding: 4rem 2rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.image {
+  flex: 1 1 45%;
+  background: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAIRaRsImUkAS9HLf2r0f5_gJogi1fasJAKzvkdSsADc1l7l2IkgheliI5oDeV-GRZoh20mllNM-OTMT5eSa_4zIL9BU5Y48up0GIYwYBwHSTc-wDCEVCeb_LyPKwPYm4M9GbBbTuewzpfYB9zRqRMbFiJNCN97lMYWqVs85o1kbX30sn0260-IMHnBcEiuGd3fVCEAenT-89N4PLJRMtDNi3U-UVx02lsmzWleweWN92OOvevTDZTfd6CTUmEym2L0tmfetCJhLk2c")
+    center/cover no-repeat;
+  border-radius: 0.75rem;
+  min-height: 350px;
+}
+
+.text {
+  flex: 1 1 45%;
+}
+
+.subtitle {
+  color: #cc998e;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+p {
+  color: #ddd;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+
+  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  span {
+    color: #cc998e;
+  }
+}

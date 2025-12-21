@@ -1,0 +1,70 @@
+.heroContainer {
+  container-type: inline-size;
+
+  @container (min-width: 480px) {
+    padding: 1rem;
+  }
+}
+
+.heroBackground {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 480px;
+  padding: 1rem;
+  gap: 1.5rem;
+  border-radius: 0;
+  position: relative;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 0.7s ease;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+
+  @container (min-width: 480px) {
+    border-radius: 0.75rem;
+    gap: 2rem;
+  }
+
+  &:hover {
+    .heroContent {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+  max-width: 42rem;
+  position: relative;
+  z-index: 10;
+  transition: transform 0.7s ease;
+}
+
+.heroTitle {
+  color: #fff;
+  font-size: 2.25rem;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.033em;
+
+  @container (min-width: 480px) {
+    font-size: 3rem;
+  }
+}
+
+.heroSubtitle {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.6;
+
+  @container (min-width: 480px) {
+    font-size: 1.125rem;
+  }
+}

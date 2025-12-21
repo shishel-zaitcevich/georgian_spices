@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+  }
+
+  p {
+    color: #cc998e;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+.tags {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.primaryTag {
+  background: rgba(249, 47, 6, 0.1);
+  color: #f92f06;
+  font-weight: bold;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.secondaryTag {
+  background: rgba(106, 57, 47, 0.3);
+  color: #cc998e;
+  font-weight: bold;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}

@@ -1,0 +1,41 @@
+.team {
+  padding: 4rem 2rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border-dark);
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+  }
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.card {
+  background: #351d18;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  img {
+    width: 100%;
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-weight: 700;
+  }
+
+  p {
+    color: #cc998e;
+  }
+}

@@ -1,0 +1,26 @@
+.meta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid #4a2821;
+  border-bottom: 1px solid #4a2821;
+  padding: 1rem 0;
+  text-align: center;
+  color: #cc998e;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+
+    span {
+      color: #f92f06;
+      font-size: 1.5rem;
+    }
+
+    strong {
+      color: white;
+      font-weight: 600;
+    }
+  }
+}

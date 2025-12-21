@@ -1,28 +1,37 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import styles from './App.module.scss';
-import Footer from './components/Footer/Footer';
-import Navbar from './components/Navbar/Navbar';
-import HomePage from './pages/HomePage';
+import Footer from './widgets/Footer/Footer';
+import Navbar from './widgets/Navbar/Navbar';
+import HomePage from './pages/HomePage/HomePage';
+import AboutPage from './pages/AboutPage/AboutPage';
+import ContactsPage from './pages/ContactsPage/ContactsPage';
+import RecipesPage from './pages/RecipesPage/RecipesPage';
+import { ModalProvider } from './context/ModalContext';
 
 const App: React.FC = () => {
   return (
-    <Router>
-      <div className={`${styles.layoutContainer}`}>
-        <div className={styles.pageWrapper}>
-          <div className={styles.contentContainer}>
-            <Navbar />
+    <ModalProvider>
+      <Router>
+        <div className={`${styles.layoutContainer}`}>
+          <div className={styles.pageWrapper}>
+            <div className={styles.contentContainer}>
+              <Navbar />
 
-            <Routes>
-              <Route path="/" element={<HomePage />} />
-            </Routes>
+              <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/about" element={<AboutPage />} />
+                <Route path="/contacts" element={<ContactsPage />} />
+                <Route path="/recipes" element={<RecipesPage />} />
+              </Routes>
 
-            <Footer />
+              <Footer />
+            </div>
           </div>
         </div>
-      </div>
-    </Router>
+      </Router>
+    </ModalProvider>
   );
 };
 
