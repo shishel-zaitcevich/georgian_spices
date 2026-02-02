@@ -23,7 +23,7 @@ export const SIGNATURE_BLENDS: Product[] = [
     name: 'Khmeli Suneli',
     description:
       'Perinteinen georgialainen yrttiseos. Syvä, lämmin maku liha-, kasvis- ja pataruokiin.',
-    price: '2,99',
+    price: 2.99,
     image: IMAGES.khmeliSuneli,
     category: 'blend',
     spices:
@@ -33,7 +33,7 @@ export const SIGNATURE_BLENDS: Product[] = [
     id: 'blend-2',
     name: 'Svanetian suola (Svanin suola)',
     description: 'A unique, aromatic salt from the Svaneti mountain region.',
-    price: '2,99',
+    price: 2.99,
     image: '/img/salt.jpg',
     category: 'blend',
     spices:
@@ -44,7 +44,7 @@ export const SIGNATURE_BLENDS: Product[] = [
     name: 'Kuiva adjika',
     description:
       'Tulinen ja aromaattinen mausteseos. Sopii grillaukseen, kastikkeisiin ja marinadeihin.',
-    price: '2,99',
+    price: 3.2,
     image: IMAGES.adjika,
     category: 'blend',
     spices: 'chili, valkosipuli, utskho suneli, imeretialainen sahrami, korianteri',
@@ -53,7 +53,7 @@ export const SIGNATURE_BLENDS: Product[] = [
     id: 'blend-4',
     name: 'Utskho suneli',
     description:
-      'Ainutlaatuinen georgialainen mauste.Välttämätön osa perinteistä georgialaista keittiötä. Tunnetaan maailmalla sinisenä sarviapilana, mutta georgialainen versio on aromiltaan omaa luokkaansa.',
+      'Ainutlaatuinen georgialainen mauste. Välttämätön osa perinteistä georgialaista keittiötä. Tunnetaan maailmalla sinisenä sarviapilana, mutta georgialainen versio on aromiltaan omaa luokkaansa.',
     price: 2.99,
     image: IMAGES.adjika,
     category: 'blend',
@@ -64,7 +64,7 @@ export const SIGNATURE_BLENDS: Product[] = [
     name: 'Vihreä adjika (tahna)',
     description:
       'Raikas ja voimakas tahna tuoreista raaka-aineista. Sopii liha-, kala- ja kasvisruokiin.',
-    price: 2.99,
+    price: 3.2,
     image: '/img/salt.jpg',
     category: 'blend',
     spices:
@@ -74,7 +74,7 @@ export const SIGNATURE_BLENDS: Product[] = [
     id: 'blend-6',
     name: 'Punainen adjika (tahna)',
     description: 'Klassinen georgialainen tulinen tahna. Täyteläinen maku ja syvä aromi.',
-    price: 2.99,
+    price: 3.2,
     image: IMAGES.adjika,
     category: 'blend',
     spices: 'chilipaprikat, valkosipuli, imeretialainen sahrami, utskho suneli, korianteri',
@@ -90,68 +90,68 @@ export const SIGNATURE_BLENDS: Product[] = [
   // },
 ];
 
-export const POPULAR_SPICES: Product[] = [
-  {
-    id: 'spice-1',
-    name: 'Imeretian Saffron',
-    description: 'Rich and floral marigold.',
-    price: 2.99,
-    image: IMAGES.imeretianSaffron,
-    category: 'single',
-  },
-  {
-    id: 'spice-2',
-    name: 'Blue Fenugreek',
-    description: 'Mildly nutty and aromatic.',
-    price: 7.49,
-    image: IMAGES.blueFenugreek,
-    category: 'single',
-  },
-  {
-    id: 'spice-3',
-    name: 'Georgian Coriander',
-    description: 'Earthy, citrusy, and essential.',
-    price: 6.99,
-    image: IMAGES.georgianCoriander,
-    category: 'single',
-  },
-];
+// export const POPULAR_SPICES: Product[] = [
+//   {
+//     id: 'spice-1',
+//     name: 'Imeretian Saffron',
+//     description: 'Rich and floral marigold.',
+//     price: 2.99,
+//     image: IMAGES.imeretianSaffron,
+//     category: 'single',
+//   },
+//   {
+//     id: 'spice-2',
+//     name: 'Blue Fenugreek',
+//     description: 'Mildly nutty and aromatic.',
+//     price: 7.49,
+//     image: IMAGES.blueFenugreek,
+//     category: 'single',
+//   },
+//   {
+//     id: 'spice-3',
+//     name: 'Georgian Coriander',
+//     description: 'Earthy, citrusy, and essential.',
+//     price: 6.99,
+//     image: IMAGES.georgianCoriander,
+//     category: 'single',
+//   },
+// ];
 
-export const HOMEMODALDATA = [
-  {
-    title: 'The Tbilisi Essentials Collection',
-    price: '2,99 50 grammalta',
-    description:
-      'Sourced directly from the Kakheti region, this collection embodies the soul of Georgian cuisine. Each blend is handcrafted using traditional sun-drying methods passed down through generations of local families.',
-    info: [
-      {
-        label: 'Culinary Uses',
-        value:
-          'Best for Khinkali dumplings, cheese Khachapuri, and grilled pork skewers (Mtsvadi).',
-      },
-      {
-        label: 'Origins',
-        value: 'Harvested in Kakheti & Svaneti, Georgia.',
-      },
-    ],
-    spices: ['Blue Fenugreek', 'Marigold', 'Svanetian Salt', 'Dried Adjika'],
-  },
-  {
-    title: 'The Tbilisi Essentials Collection',
-    price: '2,99 50 grammalta',
-    description:
-      'Sourced directly from the Kakheti region, this collection embodies the soul of Georgian cuisine. Each blend is handcrafted using traditional sun-drying methods passed down through generations of local families.',
-    info: [
-      {
-        label: 'Culinary Uses',
-        value:
-          'Best for Khinkali dumplings, cheese Khachapuri, and grilled pork skewers (Mtsvadi).',
-      },
-      {
-        label: 'Origins',
-        value: 'Harvested in Kakheti & Svaneti, Georgia.',
-      },
-    ],
-    spices: ['Blue Fenugreek', 'Marigold', 'Svanetian Salt', 'Dried Adjika'],
-  },
-];
+// export const HOMEMODALDATA = [
+//   {
+//     title: 'The Tbilisi Essentials Collection',
+//     price: '2,99 50 grammalta',
+//     description:
+//       'Sourced directly from the Kakheti region, this collection embodies the soul of Georgian cuisine. Each blend is handcrafted using traditional sun-drying methods passed down through generations of local families.',
+//     info: [
+//       {
+//         label: 'Culinary Uses',
+//         value:
+//           'Best for Khinkali dumplings, cheese Khachapuri, and grilled pork skewers (Mtsvadi).',
+//       },
+//       {
+//         label: 'Origins',
+//         value: 'Harvested in Kakheti & Svaneti, Georgia.',
+//       },
+//     ],
+//     spices: ['Blue Fenugreek', 'Marigold', 'Svanetian Salt', 'Dried Adjika'],
+//   },
+//   {
+//     title: 'The Tbilisi Essentials Collection',
+//     price: '2,99 50 grammalta',
+//     description:
+//       'Sourced directly from the Kakheti region, this collection embodies the soul of Georgian cuisine. Each blend is handcrafted using traditional sun-drying methods passed down through generations of local families.',
+//     info: [
+//       {
+//         label: 'Culinary Uses',
+//         value:
+//           'Best for Khinkali dumplings, cheese Khachapuri, and grilled pork skewers (Mtsvadi).',
+//       },
+//       {
+//         label: 'Origins',
+//         value: 'Harvested in Kakheti & Svaneti, Georgia.',
+//       },
+//     ],
+//     spices: ['Blue Fenugreek', 'Marigold', 'Svanetian Salt', 'Dried Adjika'],
+//   },
+// ];
