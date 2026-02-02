@@ -55,7 +55,7 @@ const SpiceDetails: React.FC<SpiceDetailsProps> = ({ product }) => {
       {product.price && (
         <div className={styles.priceGroup}>
           <p className={styles.price}>{product.price}</p>
-          <span>/50 grammalta</span>
+          <span> / 50 grammalta</span>
         </div>
       )}
 

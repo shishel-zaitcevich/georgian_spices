@@ -44,7 +44,7 @@ export const SIGNATURE_BLENDS: Product[] = [
     name: 'Kuiva adjika',
     description:
       'Tulinen ja aromaattinen mausteseos. Sopii grillaukseen, kastikkeisiin ja marinadeihin.',
-    price: 3.2,
+    price: '3.20',
     image: IMAGES.adjika,
     category: 'blend',
     spices: 'chili, valkosipuli, utskho suneli, imeretialainen sahrami, korianteri',
@@ -64,7 +64,7 @@ export const SIGNATURE_BLENDS: Product[] = [
     name: 'Vihreä adjika (tahna)',
     description:
       'Raikas ja voimakas tahna tuoreista raaka-aineista. Sopii liha-, kala- ja kasvisruokiin.',
-    price: 3.2,
+    price: '3.20',
     image: '/img/salt.jpg',
     category: 'blend',
     spices:
@@ -74,7 +74,7 @@ export const SIGNATURE_BLENDS: Product[] = [
     id: 'blend-6',
     name: 'Punainen adjika (tahna)',
     description: 'Klassinen georgialainen tulinen tahna. Täyteläinen maku ja syvä aromi.',
-    price: 3.2,
+    price: '3.20',
     image: IMAGES.adjika,
     category: 'blend',
     spices: 'chilipaprikat, valkosipuli, imeretialainen sahrami, utskho suneli, korianteri',
