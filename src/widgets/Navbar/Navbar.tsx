@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import styles from './Navbar.module.scss';
 import NavbarLogo from './NavbarLogo';
 import NavbarLinks from './NavbarLinks';
@@ -6,10 +6,11 @@ import NavbarLinks from './NavbarLinks';
 import NavbarMobile from './NavbarMobile';
 
 export const navLinks = [
-  { name: 'Home', path: '/' },
-  { name: 'About Us', path: '/about' },
-  { name: 'Recipes', path: '/recipes' },
-  { name: 'Contacts', path: '/contacts' },
+  { name: 'Koti', path: '/' },
+  { name: 'Meistä', path: '/about' },
+  { name: 'Reseptit', path: '/recipes' },
+  { name: 'Yhteystiedot', path: '/contacts' },
+  { name: 'Yhteistyö', modalType: 'collaboration' },
 ];
 
 const Navbar: React.FC = () => {
@@ -27,4 +28,4 @@ const Navbar: React.FC = () => {
   );
 };
 
-export default Navbar;
+export default memo(Navbar);

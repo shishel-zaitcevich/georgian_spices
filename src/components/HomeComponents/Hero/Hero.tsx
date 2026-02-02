@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 
 import styles from './Hero.module.scss';
 
@@ -18,11 +18,11 @@ const Hero: React.FC = () => {
         <HeroContent />
 
         <Button variant="orange">
-          <a href="#popular-spices"> Explore the Collection</a>
+          <a href="#signature-blends">Tutustu kokoelmaan</a>
         </Button>
       </div>
     </section>
   );
 };
 
-export default Hero;
+export default memo(Hero);
