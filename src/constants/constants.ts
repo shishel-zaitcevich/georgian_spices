@@ -16,46 +16,77 @@ export const IMAGES = {
     'https://lh3.googleusercontent.com/aida-public/AB6AXuBUTQxHYdCYH0WeXB4_S5U0tDhUF6-kvcigBV_7ZJQWuVQdu0m9DFtiHQoICh8-NDPaVIDYNCf-Lud7EASq-J13dX2Stn50I92p7Dauphc2HPlt3ZyTtfw3-PsfHS820aNXgvPj5msoego_s2EJ_3kLsKmJfinqWQ4swQSlG5uki15FGtpEcaCYFeSzL_cydmHBKg7K5wyq4Upov09drM1dlbZENl7yVF3qQ6OEhYk6drMeg4etf2rg0949jbrc-AVWjnMG3SQOd1_l',
 };
 
+//карточки на главной
 export const SIGNATURE_BLENDS: Product[] = [
   {
     id: 'blend-1',
     name: 'Khmeli Suneli',
-    description: 'The iconic Georgian 13-spice blend, perfect for stews and meats.',
-    price: 12.99,
+    description:
+      'Perinteinen georgialainen yrttiseos. Syvä, lämmin maku liha-, kasvis- ja pataruokiin.',
+    price: '2,99',
     image: IMAGES.khmeliSuneli,
     category: 'blend',
+    spices:
+      'utskho suneli, korianteri, valkosipuli, chili, imeretialainen sahrami, paprika, kurkuma, kuivatut yrtit',
   },
   {
     id: 'blend-2',
-    name: 'Svaneti Salt',
+    name: 'Svanetian suola (Svanin suola)',
     description: 'A unique, aromatic salt from the Svaneti mountain region.',
-    price: 9.49,
+    price: '2,99',
     image: '/img/salt.jpg',
     category: 'blend',
+    spices:
+      'suola, korianteri, utskho suneli, imeretialainen sahrami, tilli, valkosipuli, chili, kurkuma',
   },
   {
     id: 'blend-3',
-    name: 'Adjika',
-    description: 'A spicy, flavorful dip made from red peppers, garlic, and herbs.',
-    price: 10.99,
+    name: 'Kuiva adjika',
+    description:
+      'Tulinen ja aromaattinen mausteseos. Sopii grillaukseen, kastikkeisiin ja marinadeihin.',
+    price: '2,99',
     image: IMAGES.adjika,
     category: 'blend',
+    spices: 'chili, valkosipuli, utskho suneli, imeretialainen sahrami, korianteri',
+  },
+  {
+    id: 'blend-4',
+    name: 'Utskho suneli',
+    description:
+      'Ainutlaatuinen georgialainen mauste.Välttämätön osa perinteistä georgialaista keittiötä. Tunnetaan maailmalla sinisenä sarviapilana, mutta georgialainen versio on aromiltaan omaa luokkaansa.',
+    price: 2.99,
+    image: IMAGES.adjika,
+    category: 'blend',
+    spices: 'utskho suneli',
+  },
+  {
+    id: 'blend-5',
+    name: 'Vihreä adjika (tahna)',
+    description:
+      'Raikas ja voimakas tahna tuoreista raaka-aineista. Sopii liha-, kala- ja kasvisruokiin.',
+    price: 2.99,
+    image: '/img/salt.jpg',
+    category: 'blend',
+    spices:
+      'valkosipuli, chili, korianteri, selleri, purjo, oliiviöljy, sitruunamehu, saksanpähkinä',
+  },
+  {
+    id: 'blend-6',
+    name: 'Punainen adjika (tahna)',
+    description: 'Klassinen georgialainen tulinen tahna. Täyteläinen maku ja syvä aromi.',
+    price: 2.99,
+    image: IMAGES.adjika,
+    category: 'blend',
+    spices: 'chilipaprikat, valkosipuli, imeretialainen sahrami, utskho suneli, korianteri',
   },
   // {
-  //   id: 'blend-4',
-  //   name: 'Khachapuri',
-  //   description: 'A spicy, flavorful dip made from red peppers, garlic, and herbs.',
-  //   price: 10.99,
-  //   image: IMAGES.adjika,
-  //   category: 'blend',
-  // },
-  // {
-  //   id: 'blend-2',
+  //   id: 'blend-7',
   //   name: 'Svaneti Salt',
   //   description: 'A unique, aromatic salt from the Svaneti mountain region.',
   //   price: 9.49,
   //   image: '/img/salt.jpg',
   //   category: 'blend',
+  //   spices: 'chili, valkosipuli, utskho suneli, imeretialainen sahrami, korianteri',
   // },
 ];
 
@@ -64,7 +95,7 @@ export const POPULAR_SPICES: Product[] = [
     id: 'spice-1',
     name: 'Imeretian Saffron',
     description: 'Rich and floral marigold.',
-    price: 8.99,
+    price: 2.99,
     image: IMAGES.imeretianSaffron,
     category: 'single',
   },
@@ -83,5 +114,44 @@ export const POPULAR_SPICES: Product[] = [
     price: 6.99,
     image: IMAGES.georgianCoriander,
     category: 'single',
+  },
+];
+
+export const HOMEMODALDATA = [
+  {
+    title: 'The Tbilisi Essentials Collection',
+    price: '2,99 50 grammalta',
+    description:
+      'Sourced directly from the Kakheti region, this collection embodies the soul of Georgian cuisine. Each blend is handcrafted using traditional sun-drying methods passed down through generations of local families.',
+    info: [
+      {
+        label: 'Culinary Uses',
+        value:
+          'Best for Khinkali dumplings, cheese Khachapuri, and grilled pork skewers (Mtsvadi).',
+      },
+      {
+        label: 'Origins',
+        value: 'Harvested in Kakheti & Svaneti, Georgia.',
+      },
+    ],
+    spices: ['Blue Fenugreek', 'Marigold', 'Svanetian Salt', 'Dried Adjika'],
+  },
+  {
+    title: 'The Tbilisi Essentials Collection',
+    price: '2,99 50 grammalta',
+    description:
+      'Sourced directly from the Kakheti region, this collection embodies the soul of Georgian cuisine. Each blend is handcrafted using traditional sun-drying methods passed down through generations of local families.',
+    info: [
+      {
+        label: 'Culinary Uses',
+        value:
+          'Best for Khinkali dumplings, cheese Khachapuri, and grilled pork skewers (Mtsvadi).',
+      },
+      {
+        label: 'Origins',
+        value: 'Harvested in Kakheti & Svaneti, Georgia.',
+      },
+    ],
+    spices: ['Blue Fenugreek', 'Marigold', 'Svanetian Salt', 'Dried Adjika'],
   },
 ];

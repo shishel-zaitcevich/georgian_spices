@@ -10,8 +10,8 @@ const Footer: React.FC = () => {
         <div className={styles.brand}>
           <h3 className={styles.brandTitle}>Georgian Spices</h3>
           <p className={styles.brandDescription}>
-            Bringing the authentic taste of Georgian mountains to your kitchen. Quality, tradition,
-            and flavor in every pinch.
+            Tuomme georgialaisten vuorten aidon maun keittiöösi. Laatu, perinne ja maku jokaisessa
+            ripauksessa.
           </p>
         </div>
 
@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
       </div>
 
       <div className={styles.bottomBar}>
-        <p className={styles.copyright}>© 2025 Georgian Spices. All rights reserved.</p>
+        <p className={styles.copyright}>© 2026 Georgian Spices. Kaikki oikeudet pidätetään.</p>
         <div className={styles.socials}>
           <SocialIcon
             href={'https://www.facebook.com/GeorgianFoodHelsinki/'}

@@ -57,8 +57,8 @@ export default defineConfig({
     },
   },
   base: '/',
-  // server: {
-  //   port: 5173,
-  //   host: true,
-  // },
+  server: {
+    port: 3000,
+    host: true,
+  },
 });

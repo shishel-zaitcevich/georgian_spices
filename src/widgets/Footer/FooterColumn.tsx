@@ -8,10 +8,11 @@ interface FooterColumnProps {
 }
 
 export const navLinks = [
-  { name: 'Home', path: '/' },
-  { name: 'About', path: '/about' },
-  { name: 'Recipes', path: '/recipes' },
-  { name: 'Contacts', path: '/contacts' },
+  { name: 'Koti', path: '/' },
+  { name: 'Meistä', path: '/about' },
+  { name: 'Reseptit', path: '/recipes' },
+  { name: 'Yhteystiedot', path: '/contacts' },
+  { name: 'Yhteistyö', modalType: 'collaboration' },
 ];
 
 const FooterColumn: React.FC<FooterColumnProps> = ({ title }) => (

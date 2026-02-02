@@ -1,23 +1,23 @@
-import React from 'react';
+import React, { memo } from 'react';
 
 import styles from './SignatureBlends.module.scss';
-import { Blend } from '@/types/types';
+import { Product } from '@/types/types';
 import Button from '@/shared/Button/Button';
 
-interface BlendCardProps {
-  blend: Blend;
+export interface BlendCardProps {
+  product: Product;
   onClick?: () => void;
 }
 
-const BlendCard: React.FC<BlendCardProps> = ({ blend, onClick }) => {
+const BlendCard: React.FC<BlendCardProps> = ({ product, onClick }) => {
   return (
     <div className={styles.card}>
-      <div className={styles.image} style={{ backgroundImage: `url("${blend.image}")` }}></div>
+      <div className={styles.image} style={{ backgroundImage: `url("${product.image}")` }}></div>
 
       <div className={styles.content}>
         <div>
-          <p className={styles.name}>{blend.name}</p>
-          <p className={styles.description}>{blend.description}</p>
+          <p className={styles.name}>{product.name}</p>
+          <p className={styles.description}>{product.description}</p>
         </div>
 
         {/* <button className={styles.button}>View Blend</button> */}
@@ -29,4 +29,4 @@ const BlendCard: React.FC<BlendCardProps> = ({ blend, onClick }) => {
   );
 };
 
-export default BlendCard;
+export default memo(BlendCard);

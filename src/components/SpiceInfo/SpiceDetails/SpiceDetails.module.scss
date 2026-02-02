@@ -11,6 +11,13 @@
   margin-bottom: 0.5rem;
 }
 
+.priceGroup {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  // gap: 16px;
+}
+
 .price {
   color: #f92f06;
   font-size: 1.5rem;
