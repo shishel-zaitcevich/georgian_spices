@@ -26,7 +26,7 @@ const FooterColumn: React.FC<FooterColumnProps> = ({ title }) => (
           </a>
         </li>
       ))} */}
-      <NavbarLinks links={navLinks} />
+      <NavbarLinks links={navLinks} className={styles.navbar} />
     </ul>
   </div>
 );

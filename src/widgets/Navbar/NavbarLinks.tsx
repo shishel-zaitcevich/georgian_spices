@@ -3,6 +3,7 @@ import styles from './Navbar.module.scss';
 import { Link, NavLink } from 'react-router-dom';
 import { useModal } from '@/context/ModalContext';
 import CollaborationModal from './CollaborationModal';
+import classNames from 'classnames';
 
 interface PathLink {
   name: string;
@@ -22,34 +23,10 @@ type NavLink = PathLink | ModalLink;
 // 3. Теперь тип props остаётся прежним
 interface NavbarLinksProps {
   links: NavLink[];
+  className?: string;
 }
-// export const NavbarLinks: React.FC<NavbarLinksProps> = ({ links }) => {
-//   return (
-//     <nav className={styles.navLinks}>
-//       {links.map(({ name, path }) => (
-//         <a key={name} href={path} className={styles.link}>
-//           {name}
-//         </a>
-//       ))}
-//     </nav>
-//   );
-// };
 
-// const NavbarLinks: React.FC<NavbarLinksProps> = ({ links }) => {
-//   return (
-//     <nav className={styles.navLinks}>
-//       {links.map((link) => (
-//         <Link key={link.path} to={link.path} className={styles.link}>
-//           {link.name}
-//         </Link>
-//       ))}
-//     </nav>
-//   );
-// };
-
-// export default NavbarLinks;
-
-const NavbarLinks: React.FC<NavbarLinksProps> = ({ links }) => {
+const NavbarLinks: React.FC<NavbarLinksProps> = ({ links, className }) => {
   const { openModal } = useModal();
 
   const handleModalOpen = (type?: string) => {
@@ -59,7 +36,7 @@ const NavbarLinks: React.FC<NavbarLinksProps> = ({ links }) => {
   };
 
   return (
-    <nav className={styles.navLinks}>
+    <nav className={classNames(styles.navLinks, className)}>
       {links.map((link) =>
         link.path ? (
           <Link key={link.name} to={link.path} className={styles.link}>
