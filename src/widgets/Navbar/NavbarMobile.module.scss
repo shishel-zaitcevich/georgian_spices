@@ -1,125 +1,257 @@
+// .burgerButton {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 48px;
+//   height: 48px;
+//   background: var(--surface-dark);
+//   border: 1px solid var(--border-dark);
+//   border-radius: 0.5rem;
+//   color: white;
+//   font-size: 28px;
+//   cursor: pointer;
+//   transition: all 0.3s ease;
+
+//   @media (min-width: 768px) {
+//     display: none;
+//   }
+
+//   &:hover {
+//     background: var(--primary);
+//     border-color: var(--primary);
+//   }
+
+//   &:active {
+//     transform: scale(0.95);
+//   }
+// }
+
+// .overlay {
+//   position: fixed;
+//   inset: 0;
+//   z-index: 9999;
+//   background-color: rgba(0, 0, 0, 0.7);
+//   backdrop-filter: blur(8px);
+//   animation: fadeIn 0.3s ease-out;
+// }
+
+// .menu {
+//   position: fixed;
+//   top: 0;
+//   right: 0; /* приклеено к правому краю */
+//   width: 90%;
+//   //   max-width: 320px; /* ограничение ширины для больших экранов */
+//   height: 100%;
+//   background: var(--background-dark);
+//   border-left: 1px solid var(--border-dark); /* бордер слева */
+//   box-shadow: -8px 0 24px rgba(0, 0, 0, 0.4); /* тень слева */
+//   display: flex;
+//   flex-direction: column;
+//   transform: translateX(-0%); /* стартовая позиция — за правым краем */
+//   transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+// }
+
+// .header {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   padding: 1rem 1.5rem;
+//   border-bottom: 1px solid var(--border-dark);
+// }
+
+// .closeButton {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 40px;
+//   height: 40px;
+//   background: transparent;
+//   color: var(--accent-text);
+//   font-size: 28px;
+//   border-radius: 0.5rem;
+//   transition: all 0.2s;
+
+//   &:hover {
+//     background: var(--surface-dark);
+//     color: white;
+//   }
+// }
+
+// .links {
+//   flex: 1;
+//   padding: 1rem 0;
+//   list-style: none;
+// }
+
+// .link {
+//   display: block;
+//   padding: 1rem 1.5rem;
+//   color: var(--accent-text);
+//   font-weight: 500;
+//   text-decoration: none !important;
+//   transition: all 0.3s ease;
+
+//   &:hover {
+//     background: var(--surface-dark);
+//     color: white;
+//     padding-left: 2rem;
+//   }
+// }
+
+// .activeLink {
+//   color: white;
+//   padding: 1rem 1.5rem;
+//   // padding: 1.5rem 2rem;
+//   border-radius: 4px;
+//   text-decoration: none !important;
+// }
+
+// @keyframes fadeIn {
+//   from {
+//     opacity: 0;
+//   }
+//   to {
+//     opacity: 1;
+//   }
+// }
+
+// @keyframes slideIn {
+//   from {
+//     transform: translateX(100%);
+//   }
+//   to {
+//     transform: translateX(0);
+//   }
+// }
+
 .burgerButton {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 48px;
   height: 48px;
-  background: var(--surface-dark);
-  border: 1px solid var(--border-dark);
-  border-radius: 0.5rem;
+  background: var(--surface-dark, #1e1e1e);
+  border: 1px solid var(--border-dark, #333);
+  border-radius: 12px;
   color: white;
   font-size: 28px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.25s ease;
 
   @media (min-width: 768px) {
     display: none;
   }
+}
 
-  &:hover {
-    background: var(--primary);
-    border-color: var(--primary);
-  }
+.burgerButton:hover {
+  background: var(--primary, #e63946);
+  border-color: var(--primary);
+  transform: scale(1.05);
+}
 
-  &:active {
-    transform: scale(0.95);
-  }
+.burgerButton:active {
+  transform: scale(0.96);
 }
 
 .overlay {
   position: fixed;
   inset: 0;
   z-index: 9999;
-  background-color: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(8px);
-  animation: fadeIn 0.3s ease-out;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(10px);
+  animation: fadeIn 0.4s ease-out;
 }
 
 .menu {
   position: fixed;
   top: 0;
-  right: 0; /* приклеено к правому краю */
-  width: 90%;
-  //   max-width: 320px; /* ограничение ширины для больших экранов */
+  right: 0;
+  width: 85vw;
+  max-width: 100%;
   height: 100%;
-  background: var(--background-dark);
-  border-left: 1px solid var(--border-dark); /* бордер слева */
-  box-shadow: -8px 0 24px rgba(0, 0, 0, 0.4); /* тень слева */
+  background: var(--background-dark, #121212);
+  border-left: 1px solid var(--border-dark, #2a2a2a);
+  box-shadow: -12px 0 40px rgba(0, 0, 0, 0.55);
   display: flex;
   flex-direction: column;
-  transform: translateX(-0%); /* стартовая позиция — за правым краем */
-  transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transform: translateX(0);
+  transition: transform 0.45s cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+.menu[hidden] {
+  transform: translateX(100%);
 }
 
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 1.5rem;
+  padding: 1.25rem 1.5rem;
   border-bottom: 1px solid var(--border-dark);
+}
+
+.links {
+  flex: 1;
+  padding: 1.5rem 0;
+  list-style: none;
+}
+
+.link,
+.activeLink {
+  display: block;
+  padding: 1.1rem 1.8rem;
+  color: var(--accent-text, #ccc);
+  font-weight: 500;
+  font-size: 1.05rem;
+  text-decoration: none;
+  transition: all 0.22s ease;
+  border-radius: 0 12px 12px 0;
+}
+
+.link:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: white;
+  padding-left: 2.3rem;
+  transform: translateX(8px);
+}
+
+.activeLink {
+  color: white;
+  background: rgba(var(--primary-rgb, 230, 57, 70), 0.18);
+  font-weight: 600;
+  border-left: 4px solid var(--primary, #e63946);
+  padding-left: 1.4rem;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
 }
 
 .closeButton {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   background: transparent;
   color: var(--accent-text);
   font-size: 28px;
-  border-radius: 0.5rem;
+  border-radius: 10px;
   transition: all 0.2s;
-
-  &:hover {
-    background: var(--surface-dark);
-    color: white;
-  }
 }
 
-.links {
-  flex: 1;
-  padding: 1rem 0;
-  list-style: none;
-}
-
-.link {
-  display: block;
-  padding: 1rem 1.5rem;
-  color: var(--accent-text);
-  font-weight: 500;
-  text-decoration: none !important;
-  transition: all 0.3s ease;
-
-  &:hover {
-    background: var(--surface-dark);
-    color: white;
-    padding-left: 2rem;
-  }
-}
-
-.activeLink {
+.closeButton:hover {
+  background: rgba(255, 255, 255, 0.08);
   color: white;
-
-  padding: 1.5rem 2rem;
-  border-radius: 4px;
-  text-decoration: none !important;
 }
 
+/* Анимации */
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
-  }
-}
-
-@keyframes slideIn {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0);
   }
 }

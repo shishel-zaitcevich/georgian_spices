@@ -72,6 +72,12 @@
   font-size: 1.125rem;
   font-weight: 700;
   margin-bottom: 0.25rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .description {
