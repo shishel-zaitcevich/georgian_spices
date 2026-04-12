@@ -1,3 +1,4 @@
-## Live Demo
+## 🌐 Deployment
 
-[Open Project]([https://georgian-spices.vercel.app/])
+- Production: https://georgian-spices.vercel.app/
+
