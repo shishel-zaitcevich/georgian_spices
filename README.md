@@ -1,4 +1,5 @@
 ## 🌐 Deployment
 
-- Production: https://georgian-spices.vercel.app/
+- Production: 
+https://georgian-spices.vercel.app/
 
